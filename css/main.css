@@ -18,14 +18,32 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
+.produits h2 {
+    color: #ff8800;
+}
+
+.produits figure {
+    border : solid black 2px;
+    display: inline-block;
+}
+
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
 a {
     text-decoration: none;
     color: #ff8800;
+}
+
+footer {
+    background-color: #151515;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    margin-outside: 2rem;
+    padding: 40px 20px;
 }
 
 /********** STYLE HEADER *********/
