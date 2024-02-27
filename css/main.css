@@ -86,13 +86,13 @@ main {
 .produits {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;               /*IMPORTANT POUR LES FAIRE LES COLONE*/
+    flex-wrap: wrap;             /*IMPORTANT POUR LES FAIRE LES COLONE*/
     justify-content: center;
 }
 
 .produits li {
-    flex-basis: 50%;
+    flex-basis: 50%;             /*IMPORTANT POUR LES FAIRE LES COLONE*/
     padding: 2% 1rem;
     transition: all 0.2s ease-in-out;
 }
