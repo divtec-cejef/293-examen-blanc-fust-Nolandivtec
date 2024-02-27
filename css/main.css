@@ -18,17 +18,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
 
-.produits h2 {
-    color: #ff8800;
-}
-
-.produits figure {
-    border : solid black 2px;
-    display: inline-block;
-}
-
 img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -37,13 +28,14 @@ a {
     color: #ff8800;
 }
 
-footer {
-    background-color: #151515;
-    font-size: 1.2em;
-    color: white;
-    text-align: center;
-    margin-outside: 2rem;
-    padding: 40px 20px;
+a:hover {
+    color: #666666;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    max-width: 800px;
 }
 
 /********** STYLE HEADER *********/
@@ -53,6 +45,9 @@ header {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
+header img {
+    max-height: 80px;
+}
 /********** STYLE NAVIGATION *********/
 
 header nav ul {
@@ -91,9 +86,13 @@ main {
 .produits {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .produits li {
+    flex-basis: 50%;
     padding: 2% 1rem;
     transition: all 0.2s ease-in-out;
 }
@@ -106,16 +105,26 @@ main {
     text-align: center;
     margin: 0;
     padding: 1.5rem .75rem;
+    border: 2px solid #151515;
 }
 
 .produits figcaption {
     font-size: 1.2rem;
     line-height: 2;
-    max-width: 300px;
 }
 
 .produits figcaption h2 {
+    color: #ff8800;
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #151515;
+    margin-top: 2rem;
+    padding: 20px 40px;
+    text-align: center;
+    text-transform: uppercase;
 }
